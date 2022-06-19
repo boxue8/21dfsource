@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>iconfont Demo</title>
+  <link rel="shortcut icon" href="//img.alicdn.com/imgextra/i2/O1CN01ZyAlrn1MwaMhqz36G_!!6000000001499-73-tps-64-64.ico" type="image/x-icon"/>
+  <link rel="icon" type="image/svg+xml" href="//img.alicdn.com/imgextra/i4/O1CN01EYTRnJ297D6vehehJ_!!6000000008020-55-tps-64-64.svg"/>
+  <link rel="stylesheet" href="https://g.alicdn.com/thx/cube/1.3.2/cube.min.css">
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="iconfont.css">
+  <script src="iconfont.js"></script>
+  <!-- jQuery -->
+  <script src="https://a1.alicdn.com/oss/uploads/2018/12/26/7bfddb60-08e8-11e9-9b04-53e73bb6408b.js"></script>
+  <!-- 代码高亮 -->
+  <script src="https://a1.alicdn.com/oss/uploads/2018/12/26/a3f714d0-08e6-11e9-8a15-ebf944d7534c.js"></script>
+  <style>
+    .main .logo {
+      margin-top: 0;
+      height: auto;
+    }
+
+    .main .logo a {
+      display: flex;
+      align-items: center;
+    }
+
+    .main .logo .sub-title {
+      margin-left: 0.5em;
+      font-size: 22px;
+      color: #fff;
+      background: linear-gradient(-45deg, #3967FF, #B500FE);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1 class="logo"><a href="https://www.iconfont.cn/" title="iconfont 首页" target="_blank">
+      <img width="200" src="https://img.alicdn.com/imgextra/i3/O1CN01Mn65HV1FfSEzR6DKv_!!6000000000514-55-tps-228-59.svg">
+      
+        <span class="sub-title">彩色字体</span>
+      
+    </a></h1>
+    <div class="nav-tabs">
+      <ul id="tabs" class="dib-box">
+        <li class="dib active"><span>Unicode</span></li>
+        <li class="dib"><span>Font class</span></li>
+        <li class="dib"><span>Symbol</span></li>
+      </ul>
+      
+      <a href="https://www.iconfont.cn/manage/index?manage_type=myprojects&projectId=3466893" target="_blank" class="nav-more">查看项目</a>
+      
+    </div>
+    <div class="tab-container">
+      <div class="content unicode" style="display: block;">
+          <ul class="icon_lists dib-box">
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xec1d;</span>
+                <div class="name">云端下载</div>
+                <div class="code-name">&amp;#xec1d;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe87a;</span>
+                <div class="name">重点项目</div>
+                <div class="code-name">&amp;#xe87a;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe668;</span>
+                <div class="name">预览</div>
+                <div class="code-name">&amp;#xe668;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe60f;</span>
+                <div class="name">源代码</div>
+                <div class="code-name">&amp;#xe60f;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe6cb;</span>
+                <div class="name">首页</div>
+                <div class="code-name">&amp;#xe6cb;</div>
+              </li>
+          
+            <li class="dib">
+              <span class="icon iconfont">&#xe616;</span>
+                <div class="name">扫描</div>
+                <div class="code-name">&amp;#xe616;</div>
+              </li>
+          
+          </ul>
+          <div class="article markdown">
+          <h2 id="unicode-">Unicode 引用</h2>
+          <hr>
+
+          <p>Unicode 是字体在网页端最原始的应用方式，特点是：</p>
+          <ul>
+            <li>支持按字体的方式去动态调整图标大小，颜色等等。</li>
+            <li>默认情况下不支持多色，直接添加多色图标会自动去色。</li>
+          </ul>
+          <blockquote>
+            <p>注意：新版 iconfont 支持两种方式引用多色图标：SVG symbol 引用方式和彩色字体图标模式。（使用彩色字体图标需要在「编辑项目」中开启「彩色」选项后并重新生成。）</p>
+          </blockquote>
+          <p>Unicode 使用步骤如下：</p>
+          <h3 id="-font-face">第一步：拷贝项目下面生成的 <code>@font-face</code></h3>
+<pre><code class="language-css"
+>@font-face {
+  font-family: 'iconfont';
+  src: 
+       url('data:application/x-font-woff2;charset=utf-8;base64,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') format('woff2'),
+       url('iconfont.woff?t=1655278349033') format('woff'),
+       url('iconfont.ttf?t=1655278349033') format('truetype');
+}
+</code></pre>
+          <h3 id="-iconfont-">第二步：定义使用 iconfont 的样式</h3>
+<pre><code class="language-css"
+>.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+</code></pre>
+          <h3 id="-">第三步：挑选相应图标并获取字体编码，应用于页面</h3>
+<pre>
+<code class="language-html"
+>&lt;span class="iconfont"&gt;&amp;#x33;&lt;/span&gt;
+</code></pre>
+          <blockquote>
+            <p>"iconfont" 是你项目下的 font-family。可以通过编辑项目查看，默认是 "iconfont"。</p>
+          </blockquote>
+          </div>
+      </div>
+      <div class="content font-class">
+        <ul class="icon_lists dib-box">
+          
+          <li class="dib">
+            <span class="icon iconfont icon-yunduanxiazai"></span>
+            <div class="name">
+              云端下载
+            </div>
+            <div class="code-name">.icon-yunduanxiazai
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-zhongdianxiangmu"></span>
+            <div class="name">
+              重点项目
+            </div>
+            <div class="code-name">.icon-zhongdianxiangmu
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-yulan"></span>
+            <div class="name">
+              预览
+            </div>
+            <div class="code-name">.icon-yulan
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-yuandaima"></span>
+            <div class="name">
+              源代码
+            </div>
+            <div class="code-name">.icon-yuandaima
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-shouye"></span>
+            <div class="name">
+              首页
+            </div>
+            <div class="code-name">.icon-shouye
+            </div>
+          </li>
+          
+          <li class="dib">
+            <span class="icon iconfont icon-saomiao"></span>
+            <div class="name">
+              扫描
+            </div>
+            <div class="code-name">.icon-saomiao
+            </div>
+          </li>
+          
+        </ul>
+        <div class="article markdown">
+        <h2 id="font-class-">font-class 引用</h2>
+        <hr>
+
+        <p>font-class 是 Unicode 使用方式的一种变种，主要是解决 Unicode 书写不直观，语意不明确的问题。</p>
+        <p>与 Unicode 使用方式相比，具有如下特点：</p>
+        <ul>
+          <li>相比于 Unicode 语意明确，书写更直观。可以很容易分辨这个 icon 是什么。</li>
+          <li>因为使用 class 来定义图标，所以当要替换图标时，只需要修改 class 里面的 Unicode 引用。</li>
+        </ul>
+        <p>使用步骤如下：</p>
+        <h3 id="-fontclass-">第一步：引入项目下面生成的 fontclass 代码：</h3>
+<pre><code class="language-html">&lt;link rel="stylesheet" href="./iconfont.css"&gt;
+</code></pre>
+        <h3 id="-">第二步：挑选相应图标并获取类名，应用于页面：</h3>
+<pre><code class="language-html">&lt;span class="iconfont icon-xxx"&gt;&lt;/span&gt;
+</code></pre>
+        <blockquote>
+          <p>"
+            iconfont" 是你项目下的 font-family。可以通过编辑项目查看，默认是 "iconfont"。</p>
+        </blockquote>
+      </div>
+      </div>
+      <div class="content symbol">
+          <ul class="icon_lists dib-box">
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-yunduanxiazai"></use>
+                </svg>
+                <div class="name">云端下载</div>
+                <div class="code-name">#icon-yunduanxiazai</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-zhongdianxiangmu"></use>
+                </svg>
+                <div class="name">重点项目</div>
+                <div class="code-name">#icon-zhongdianxiangmu</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-yulan"></use>
+                </svg>
+                <div class="name">预览</div>
+                <div class="code-name">#icon-yulan</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-yuandaima"></use>
+                </svg>
+                <div class="name">源代码</div>
+                <div class="code-name">#icon-yuandaima</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-shouye"></use>
+                </svg>
+                <div class="name">首页</div>
+                <div class="code-name">#icon-shouye</div>
+            </li>
+          
+            <li class="dib">
+                <svg class="icon svg-icon" aria-hidden="true">
+                  <use xlink:href="#icon-saomiao"></use>
+                </svg>
+                <div class="name">扫描</div>
+                <div class="code-name">#icon-saomiao</div>
+            </li>
+          
+          </ul>
+          <div class="article markdown">
+          <h2 id="symbol-">Symbol 引用</h2>
+          <hr>
+
+          <p>这是一种全新的使用方式，应该说这才是未来的主流，也是平台目前推荐的用法。相关介绍可以参考这篇<a href="">文章</a>
+            这种用法其实是做了一个 SVG 的集合，与另外两种相比具有如下特点：</p>
+          <ul>
+            <li>支持多色图标了，不再受单色限制。</li>
+            <li>通过一些技巧，支持像字体那样，通过 <code>font-size</code>, <code>color</code> 来调整样式。</li>
+            <li>兼容性较差，支持 IE9+，及现代浏览器。</li>
+            <li>浏览器渲染 SVG 的性能一般，还不如 png。</li>
+          </ul>
+          <p>使用步骤如下：</p>
+          <h3 id="-symbol-">第一步：引入项目下面生成的 symbol 代码：</h3>
+<pre><code class="language-html">&lt;script src="./iconfont.js"&gt;&lt;/script&gt;
+</code></pre>
+          <h3 id="-css-">第二步：加入通用 CSS 代码（引入一次就行）：</h3>
+<pre><code class="language-html">&lt;style&gt;
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+&lt;/style&gt;
+</code></pre>
+          <h3 id="-">第三步：挑选相应图标并获取类名，应用于页面：</h3>
+<pre><code class="language-html">&lt;svg class="icon" aria-hidden="true"&gt;
+  &lt;use xlink:href="#icon-xxx"&gt;&lt;/use&gt;
+&lt;/svg&gt;
+</code></pre>
+          </div>
+      </div>
+
+    </div>
+  </div>
+  <script>
+  $(document).ready(function () {
+      $('.tab-container .content:first').show()
+
+      $('#tabs li').click(function (e) {
+        var tabContent = $('.tab-container .content')
+        var index = $(this).index()
+
+        if ($(this).hasClass('active')) {
+          return
+        } else {
+          $('#tabs li').removeClass('active')
+          $(this).addClass('active')
+
+          tabContent.hide().eq(index).fadeIn()
+        }
+      })
+    })
+  </script>
+</body>
+</html>
